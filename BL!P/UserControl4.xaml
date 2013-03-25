@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="Blip.UserControl4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="376" d:DesignWidth="609" Loaded="UserControl4_Loaded">
+    <Grid Height="377" Name="grid1" Width="609">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="227*" />
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="83*" />
+            <ColumnDefinition Width="299*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*" />
+            <RowDefinition Height="259*" />
+        </Grid.RowDefinitions>
+        <TextBlock FontFamily="Calibri" Grid.ColumnSpan="4" FontSize="25" Foreground="Black" Padding="10" FontWeight="Normal" HorizontalAlignment="Left" Width="609" Height="50" Margin="0,0,0,248" Grid.RowSpan="2" VerticalAlignment="Top">Set NCBI BLAST Parameters and Filters
+            <!--
+            <TextBlock.BitmapEffect>
+            <DropShadowBitmapEffect Color="Black" ShadowDepth="4" Direction="330" Opacity="0.5" Softness="0.25">
+            </DropShadowBitmapEffect>
+            </TextBlock.BitmapEffect><TextBlock.Background><LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5"><GradientStop Color="#FF008DED" Offset="0" /><GradientStop Color="White" Offset="1" /></LinearGradientBrush></TextBlock.Background>
+            -->
+        </TextBlock>
+        <TextBlock FontWeight="Medium" Height="23" HorizontalAlignment="Left" Name="textBlock1" Text="Parameters:" VerticalAlignment="Top" Width="169" Grid.Row="1" Margin="12,15,0,0" TextAlignment="Left" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="8,30,0,0" Name="BlastProgram" VerticalAlignment="Top" Width="109" SelectedIndex="1" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="BlastProgram_SelectionChanged">
+            <ComboBoxItem >blastn</ComboBoxItem>
+            <ComboBoxItem >blastp</ComboBoxItem>
+            <ComboBoxItem >blastx</ComboBoxItem>
+            <ComboBoxItem >tblastn</ComboBoxItem>
+            <ComboBoxItem >tblastx</ComboBoxItem>
+        </ComboBox>
+        <ComboBox ItemsSource="{Binding}" Height="23" HorizontalAlignment="Left" Margin="8,88,0,0" Name="BlastDatabase" VerticalAlignment="Top" Width="107" SelectedIndex="0" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">
+        </ComboBox>
+        <ComboBox IsEnabled="false" Height="23" HorizontalAlignment="Right" Margin="0,59,178,0" Name="BlastGeneticCode" VerticalAlignment="Top" Width="196" SelectedIndex="0" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">
+            <ComboBoxItem>Standard (1)</ComboBoxItem>
+            <ComboBoxItem>Vertebrate Mitochondrial (2)</ComboBoxItem>
+            <ComboBoxItem>Yeast Mitochondrial (3)</ComboBoxItem>
+            <ComboBoxItem>Mold Mitochondrial; ... (4)</ComboBoxItem>
+            <ComboBoxItem>Invertebrate Mitochondrial (5)</ComboBoxItem>
+            <ComboBoxItem>Ciliate Nuclear; ... (6)</ComboBoxItem>
+            <ComboBoxItem IsEnabled="False">Not Specified (7)</ComboBoxItem>
+            <ComboBoxItem IsEnabled="False">Not specified (8)</ComboBoxItem>
+            <ComboBoxItem>Echinoderm Mitochondrial (9)</ComboBoxItem>
+            <ComboBoxItem>Euplotid Nuclear (10)</ComboBoxItem>
+            <ComboBoxItem>Bacteria and Archaea (11)</ComboBoxItem>
+            <ComboBoxItem>Alternative Yeast Nuclear (12)</ComboBoxItem>
+            <ComboBoxItem>Ascidian Mitochondrial (13)</ComboBoxItem>
+            <ComboBoxItem>Flatworm Mitochondrial (14)</ComboBoxItem>
+            <ComboBoxItem>Blepharisma Macronuclear (15)</ComboBoxItem>
+        </ComboBox>
+        
+        <ComboBox ItemsSource="{Binding}" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="8,118,0,0" Name="BlastAlgorithm" VerticalAlignment="Top" Width="107" />
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="171,119,0,0" Name="textBlock10" Text="Algorithm:" VerticalAlignment="Top" Width="56" />
+        
+        <Separator Grid.ColumnSpan="4" Grid.Row="1" Height="11" HorizontalAlignment="Left" Margin="12,142,0,0" Name="separator1" VerticalAlignment="Top" Width="585" />
+        
+        <TextBlock Height="19" HorizontalAlignment="Left" Margin="166,91,0,0" Name="textBlock7" Text="Database:" VerticalAlignment="Top" Grid.Row="1" Width="61" TextAlignment="Right" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="164,33,0,0" Name="textBlock8" Text="Program:" VerticalAlignment="Top" Grid.Row="1" Width="63" TextAlignment="Right" />
+        <TextBlock Height="18" HorizontalAlignment="Left" Margin="145,62,0,0" Name="textBlock" Text="Genetic Code:" VerticalAlignment="Top" Grid.Row="1" Width="82" TextAlignment="Right" />
+        <Slider Grid.Column="3" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="9,175,0,0" Name="QueryCoverageSlider" VerticalAlignment="Top" Width="100" Minimum="0" Maximum="100" Value="60" IsSnapToTickEnabled="True" TickFrequency="5" TickPlacement="BottomRight"/>
+        <Slider Grid.Column="3" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="9,204,0,0" Name="PercentIdSlider" VerticalAlignment="Top" Width="100" Minimum="0" Maximum="100" Value="80"  IsSnapToTickEnabled="True" TickFrequency="5" TickPlacement="BottomRight"/>
+        <Slider Grid.Column="3" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="9,233,0,0" Name="EvalueSlider" VerticalAlignment="Top" Width="100" Minimum="-60" Maximum="0" Value="-20"  IsSnapToTickEnabled="True" TickFrequency="5" TickPlacement="BottomRight"/>
+        <Slider Grid.Column="3" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="9,262,0,0" Name="NumTopHitsSlider" VerticalAlignment="Top" Width="100"  Minimum="1" Maximum="20" Value="2" IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight"/>
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="QueryCoverageTextBox" VerticalAlignment="Top" Width="35" Grid.Column="2" Margin="38,175,0,0" Text="{Binding ElementName=QueryCoverageSlider, Path=Value, Mode=TwoWay}"/>
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="37,204,0,0" Name="PercentIdTextBox" VerticalAlignment="Top" Width="36" Grid.Column="2" Text="{Binding ElementName=PercentIdSlider, Path=Value, Mode=TwoWay}"/>
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="38,233,0,0" Name="EvalueTextBox" VerticalAlignment="Top" Width="35" Grid.Column="2" Text="{Binding ElementName=EvalueSlider, Path=Value, Mode=TwoWay}"/>
+        <TextBox Grid.Column="2" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="39,262,0,0" Name="NumTopHitsBox" VerticalAlignment="Top" Width="34" Text="{Binding ElementName=NumTopHitsSlider, Path=Value, Mode=TwoWay}"/>
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="textBlock2" Text="Min. % Query Coverage:" VerticalAlignment="Top" Margin="99,178,0,0" TextAlignment="Right" />
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="145,207,0,0" Name="textBlock3" Text="Min. % Identity:" VerticalAlignment="Top" TextAlignment="Right" />
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="157,236,0,0" Name="textBlock4" Text="Max. E-value:" VerticalAlignment="Top" TextAlignment="Right" />
+        <TextBlock Grid.Column="2" Grid.Row="1" Height="16" HorizontalAlignment="left" Margin="8,236,0,0" Name="textBlock5" Text="1.0e " VerticalAlignment="Top" Width="30" TextAlignment="Right"/>
+        
+        <TextBlock Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,265,0,0" Name="textBlock6" Text="Hits Per Query that Exceed Limits:" VerticalAlignment="Top" Width="215" TextAlignment="Right" />
+        <TextBlock FontWeight="Medium" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,149,0,0" Name="textBlock9" Text="Filters:" VerticalAlignment="Top" Width="50" />
+    </Grid>
+</UserControl>
