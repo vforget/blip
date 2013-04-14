@@ -19,7 +19,9 @@ Software requirements
  
 
 [Explore a sample data set](http://www.genomequebec.mcgill.ca/compgen/public/blip/blip_demo/blip.html)
+
 [Watch a short video presentation](http://research.microsoft.com/apps/video/default.aspx?id=142016)
+
 [Question to ask, or bug to report?](https://github.com/vforget)
 
 Introduction
@@ -37,12 +39,12 @@ of hidden patterns. Pivot structures its data into collections, which combines g
 of multiple biological sequences and converts the results into a Pivot collection. BL!P also provides an interface  to construct custom image 
 layouts for the collection of Pivot items.
 
-BL!P was developed using C# and .NET 4.0, and uses the [Microsoft Biology Foundation](http://mbf.codeplex.com) (MBF) bioinformatics toolkit to access NCBI resources such as NCBI BLAST and http://www.ncbi.nlm.nih.gov/genbank/ GenBank, 
-as well as parsers to read/write biological sequence data.
+BL!P was developed using C# and .NET 4.0, and uses the [Microsoft Biology Foundation](http://mbf.codeplex.com) (MBF) bioinformatics toolkit to 
+access NCBI resources such as NCBI BLAST and [GenBank](http://www.ncbi.nlm.nih.gov/genbank/), as well as parsers to read/write biological sequence data.
 
 BL!P automatically submits multiple FASTA formatted coding DNA or 
 amino acid sequences to a NCBI BLAST protein database. Submissions are polled until complete, and the results are saved to disk for later use. 
 Upon completion of the NCBI BLAST search, the GenBank  records for each BLAST hit that meets user specified criteria is downloaded and saved to 
 disk for later use. The results from BLAST and information in the GenBank records are parsed and converted to a Pivot collection. Using data from 
 the Pivot collection,  a custom image layout is constructed to represent each BLAST hit. The results are saved to disk and can be loaded into 
-Pivot for exploration. BL!P is a member of the [Microsoft Biology Initiative](http://research.microsoft.com/bio/)
+Pivot for exploration. BL!P is a member of the [Microsoft Biology Initiative](http://research.microsoft.com/bio/).
