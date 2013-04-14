@@ -1,5 +1,0 @@
-C:\Users\Vince\Dropbox\projects\apps\blip\BL!PPivotPiewer.Web\bin\BL!PPivotPiewer.Web.dll
-C:\Users\Vince\Dropbox\projects\apps\blip\BL!PPivotPiewer.Web\bin\BL!PPivotPiewer.Web.pdb
-C:\Users\Vince\Dropbox\projects\apps\blip\BL!PPivotPiewer.Web\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Vince\Dropbox\projects\apps\blip\BL!PPivotPiewer.Web\obj\Debug\BL!PPivotPiewer.Web.dll
-C:\Users\Vince\Dropbox\projects\apps\blip\BL!PPivotPiewer.Web\obj\Debug\BL!PPivotPiewer.Web.pdb

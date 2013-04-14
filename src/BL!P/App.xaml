@@ -1,0 +1,15 @@
+﻿<Application x:Class="Blip.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:extbehaviour="clr-namespace:WPFExtensions.AttachedBehaviours;assembly=WPFExtensions"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="DraggableObject" TargetType="TextBlock">
+                <Setter Property="extbehaviour:DragBehaviour.IsDragEnabled" Value="True" />
+                <Setter Property="extbehaviour:DragBehaviour.X" Value="{Binding RelativeSource={RelativeSource Self},Path=(Canvas.Left)}" />
+                <Setter Property="extbehaviour:DragBehaviour.Y" Value="{Binding RelativeSource={RelativeSource Self},Path=(Canvas.Top)}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

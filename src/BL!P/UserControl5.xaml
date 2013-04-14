@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Blip.UserControl5"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="609">
+    <Grid Height="300" Name="stackPanel1" Width="609">
+        <TextBlock FontFamily="Calibri" FontSize="25" Foreground="Black" Padding="10" FontWeight="Normal" HorizontalAlignment="Center" Width="609" Height="50" Margin="0,0,0,250">Generating Results
+            <!--
+            <TextBlock.BitmapEffect>
+            <DropShadowBitmapEffect Color="Black" ShadowDepth="4" Direction="330" Opacity="0.5" Softness="0.25">
+            </DropShadowBitmapEffect>
+            </TextBlock.BitmapEffect><TextBlock.Background><LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5"><GradientStop Color="#FF008DED" Offset="0" /><GradientStop Color="White" Offset="1" /></LinearGradientBrush></TextBlock.Background>
+            -->
+        </TextBlock>
+
+        <TextBlock Name="UserControl5TextBlock1" Text="Please wait while the program completes the following steps. Steps 1 &amp; 3 may take a while ..." TextWrapping="Wrap" TextAlignment="Left" Margin="91,67,98,198" />
+        <TextBlock Height="23" Name="UserControl5Step1" Text="1. Verify and complete NCBI BLAST of sequences." TextAlignment="Left" FontWeight="Normal" Foreground="Gray" Width="333" Margin="115,107,84,170" />
+        <TextBlock Height="23" Name="UserControl5Step2" Text="2. Filter BLAST records using selected thresholds." TextAlignment="Left" FontWeight="Normal" Foreground="Gray" Width="306" Margin="115,136,111,141" />
+        <TextBlock Height="23" Name="UserControl5Step3" Text="3. Verify and complete download of GenBank records." TextAlignment="Left" FontWeight="Normal" Foreground="Gray" Width="315" Margin="116,166,102,111" />
+        <TextBlock Height="23" Name="UserControl5TextBlock2" Text="Click Next to Proceed." Width="120" Margin="190,231,222,46" HorizontalAlignment="Center" Visibility="Hidden"/>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="154,195,0,0" Name="UserControl5Step4" Text="4. Collect results." VerticalAlignment="Top" Foreground="Gray"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Blip.UserControl11"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="423" d:DesignWidth="609" Loaded="UserControl11_Loaded" Background="{x:Null}">
+    <Grid Height="422" HorizontalAlignment="Left" Name="grid1" VerticalAlignment="Top" Width="609">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="369*" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock FontSize="25" Foreground="Black" FontFamily="Calibri" Padding="10" FontWeight="Normal" HorizontalAlignment="Left" Width="609">Loading Data Explorer</TextBlock>
+        <!--
+        <TextBlock FontFamily="Arial" Margin="38,82,55,245" Grid.Row="1" TextAlignment="Center" Background="Black"><Hyperlink RequestNavigate="RedirectToBrowser" FontSize="20" NavigateUri="http://127.0.0.1:8085/blip.html">Launch Pivot Viewer</Hyperlink></TextBlock>
+        -->
+        <TextBlock Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="38,49,0,0" Name="TextBlock1" Text="Click the button below to view the results:" VerticalAlignment="Top" Width="266" />
+        <Button Content="Explore BLAST Results" Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="235,82,0,0" Name="button1" VerticalAlignment="Top" Width="148" Click="button1_Click" />
+        <TextBlock Foreground="Red" FontSize="14"  Grid.Row="1" Height="35" HorizontalAlignment="Left" Margin="38,0,0,195" Name="textBlock2" Text="The BLAST results viewer requires that this window be left open." VerticalAlignment="Bottom" FontWeight="ExtraBold" Width="479" TextWrapping="Wrap" />
+    </Grid>
+</UserControl>

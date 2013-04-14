@@ -1,0 +1,97 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blip", "BL!P\Blip.csproj", "{CE5DF152-3079-44CC-860F-F5013D13690A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A} = {D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4} = {DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL!PPivotPiewer", "BL!PPivotPiewer\BL!PPivotPiewer.csproj", "{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL!PPivotPiewer.Web", "BL!PPivotPiewer.Web\BL!PPivotPiewer.Web.csproj", "{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A} = {D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A} = {D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4} = {DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs13
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BL!P\\Blip.csproj
+		SccProjectName1 = BL!P
+		SccLocalPath1 = BL!P
+		SccProjectUniqueName2 = BL!PPivotPiewer.Web\\BL!PPivotPiewer.Web.csproj
+		SccProjectName2 = BL!PPivotPiewer.Web
+		SccLocalPath2 = BL!PPivotPiewer.Web
+		SccProjectUniqueName3 = BL!PPivotPiewer\\BL!PPivotPiewer.csproj
+		SccProjectName3 = BL!PPivotPiewer
+		SccLocalPath3 = BL!PPivotPiewer
+		SccProjectUniqueName4 = Setup\\Setup.vdproj
+		SccProjectName4 = Setup
+		SccLocalPath4 = Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|Any CPU.Build.0 = Debug|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|Mixed Platforms.ActiveCfg = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|Mixed Platforms.Build.0 = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|x86.ActiveCfg = Debug|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Debug|x86.Build.0 = Debug|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|Any CPU.ActiveCfg = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|Any CPU.Build.0 = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|x86.ActiveCfg = Release|x86
+		{CE5DF152-3079-44CC-860F-F5013D13690A}.Release|x86.Build.0 = Release|x86
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7B2B930-E47A-4276-B6FA-C5FD0F84BE2A}.Release|x86.Build.0 = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB22B37C-171F-4B45-94A3-8AA82ABBDBD4}.Release|x86.Build.0 = Release|Any CPU
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Debug|Any CPU.ActiveCfg = Debug
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Debug|Mixed Platforms.ActiveCfg = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Debug|Mixed Platforms.Build.0 = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Debug|x86.ActiveCfg = Debug
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Release|Any CPU.ActiveCfg = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Release|Any CPU.Build.0 = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Release|Mixed Platforms.ActiveCfg = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Release|x86.ActiveCfg = Release
+		{A169A38F-F5B1-4E1A-B64B-2AD043B0A524}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
