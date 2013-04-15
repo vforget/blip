@@ -48,3 +48,12 @@ Upon completion of the NCBI BLAST search, the GenBank  records for each BLAST hi
 disk for later use. The results from BLAST and information in the GenBank records are parsed and converted to a Pivot collection. Using data from 
 the Pivot collection,  a custom image layout is constructed to represent each BLAST hit. The results are saved to disk and can be loaded into 
 Pivot for exploration. BL!P is a member of the [Microsoft Biology Initiative](http://research.microsoft.com/bio/).
+
+Developers
+==========
+
+Vince Forgetta
+Postdoctoral Researcher, McGill University.
+
+Leonardo Montes Marin
+Ingeniero Investigador en Centro de Bioinformática y Biología Computacional de Colombia
