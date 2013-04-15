@@ -52,6 +52,6 @@ Pivot for exploration. BL!P is a member of the [Microsoft Biology Initiative](ht
 Developers
 ==========
 
-*Vince Forgetta*, _Postdoctoral Researcher, McGill University_
+**Vince Forgetta**, _Postdoctoral Researcher, McGill University_
 
-*Leonardo Montes Marin*, _Ingeniero Investigador en Centro de Bioinformática y Biología Computacional de Colombia_
+**Leonardo Montes Marin**, _Ingeniero Investigador en Centro de Bioinformática y Biología Computacional de Colombia_
