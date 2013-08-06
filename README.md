@@ -6,7 +6,7 @@ BL!P [blip], or BLAST in Pivot, is a computer program that automates the NCBI BL
 Download BL!P
 =============
 
-Downlad Setup.msi from the bin/ directory.
+Downlad Setup.msi from [releases](https://github.com/vforget/blip/releases).
 
 Software requirements
 =====================
